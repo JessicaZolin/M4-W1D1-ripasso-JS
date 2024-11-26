@@ -49,16 +49,25 @@ document.getElementById("input-A1").placeholder = "Inserisci un numero"
 document.getElementById("input-B1").placeholder = "Inserisci un numero"
 document.getElementById("button-1").textContent = "controlla numeri"
 
+// funzione generale
 
 const uguale50 = (a, b) => {
+    // controlla che i due valori siano numeri
+    if (isNaN(a) || isNaN(b)) {
+        return "Error: inserisci due numeri validi.";
+    } else {
     if (a === 50) {
         return "True: uno dei due numeri inseriti è uguale a 50";
     } else if (a + b === 50) {
         return "True: la somma dei due numeri è uguale a 50.";
    } else {
         return "False: nessuno dei due numeri e nemmeno la loro somma è uguale a 50.";
-    }
+    }}
 }
+
+
+
+// richiama funzione al click del button utilizzando dati input 
 
 document.getElementById("button-1").addEventListener("click", () => {
     // prende valori da input e converte in numeri
@@ -76,10 +85,47 @@ document.getElementById("button-1").addEventListener("click", () => {
 
 
 
-/* ESERCIZIO 2:
-Crea una funzione che rimuova il carattere ad una specifica posizione da una stringa. Passa la stringa e l aposizione come parametri e ritorna la stringa modificata*/
 
-document.getElementById("consegna-2").innerText = "Crea una funzione che rimuova il carattere ad una specifica posizione da una stringa. Passa la stringa e l aposizione come parametri e ritorna la stringa modificata"
+
+
+/* ESERCIZIO 2:
+Crea una funzione che rimuova il carattere ad una specifica posizione da una stringa. Passa la stringa e la posizione come parametri e ritorna la stringa modificata*/
+
+document.getElementById("consegna-2").innerHTML = "Crea una funzione che rimuova il carattere ad una specifica posizione da una stringa. <br>Passa la stringa e la posizione come parametri e ritorna la stringa modificata"
+document.getElementById("input-A2").placeholder = "Inserisci una parola o una frase"
+document.getElementById("input-B2").placeholder = "Inserisci un numero"
+document.getElementById("button-2").textContent = "togli carattere"
+
+// funzione generale
+
+const eliminaCarattere = (a, b) => {
+    if (isNaN(b) || b < 0 || b >= a.length) {
+        return "Error: inserisci un numero valido, diverso da 0 e inferiore al numero di valori contenuto nella parola/frase"
+    } else {
+    return `La parola/frase senza carattere è: ${a.slice(0, b) + a.slice(b+1)}`;
+}
+}
+
+
+// richiama funzione al click del button utilizzando dati input 
+
+document.getElementById("button-2").addEventListener("click", () => {
+    // prende valori da input e converte in numeri
+    inputA2 = document.getElementById("input-A2").value;
+    inputB2 = parseInt(document.getElementById("input-B2").value);
+    // richiama funzione con valori e salva in variabile 
+    let risultato = eliminaCarattere (inputA2, inputB2);
+    // svuota valori input
+    document.getElementById("input-A2").value = "";
+    document.getElementById("input-B2").value = "";
+    // stampa risposta in HTML
+    document.getElementById("risposta-2").innerText = risultato;
+    })
+
+
+
+
+
 
 
 /* ESERCIZIO 3:
