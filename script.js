@@ -131,7 +131,7 @@ document.getElementById("button-2").addEventListener("click", () => {
 /* ESERCIZIO 3:
 Crea una funzione che controlli se due numeri sono compresi tra 40 e 60 o tra 70 e 100. Ritorna `true` se rispecchiano queste condizioni, altrimenti ritorna `false`.*/
 
-document.getElementById("consegna-3").innerText = "Crea una funzione che controlli se due numeri sono compresi tra 40 e 60 o tra 70 e 100. Ritorna `true` se rispecchiano queste condizioni, altrimenti ritorna `false`."
+document.getElementById("consegna-3").innerHTML = "Crea una funzione che controlli se due numeri sono compresi tra 40 e 60 o tra 70 e 100. <br>Ritorna `true` se rispecchiano queste condizioni, altrimenti ritorna `false`."
 
 
 /* ESERCIZIO 4:
@@ -143,20 +143,20 @@ document.getElementById("consegna-4").innerText = "Crea una funzione che accetti
 /* ESERCIZIO 5:
 Crea una funzione che calcoli e ritorni la somma di tutti gli elementi di un array. L'array deve essere passato come parametro.*/
 
-document.getElementById("consegna-5").innerText = "Crea una funzione che calcoli e ritorni la somma di tutti gli elementi di un array. L'array deve essere passato come parametro."
+document.getElementById("consegna-5").innerHTML = "Crea una funzione che calcoli e ritorni la somma di tutti gli elementi di un array. <br>L'array deve essere passato come parametro."
 
 
 /* ESERCIZIO 6:
 Crea una funzione che controlli che un array NON contenga i numeri 1 0 3. Se NON li contiene, ritorna `true`, altrimenti ritorna `false`.*/
 
-document.getElementById("consegna-6").innerText = "Crea una funzione che controlli che un array NON contenga i numeri 1 0 3. Se NON li contiene, ritorna `true`, altrimenti ritorna `false`."
+document.getElementById("consegna-6").innerHTML = "Crea una funzione che controlli che un array NON contenga i numeri 1 0 3. <br>Se NON li contiene, ritorna `true`, altrimenti ritorna `false`."
 
 /* ESERCIZIO 7:
 Crea una funzione per trovare il tipo di una ngolo i cui gradi sono passati come parametri. Angolo acuto: meno di 90° => ritorna `acuto`. Angolo ottuso: tra i 90° e i 180° gradi => ritorna `ottuso`. Angolo retto: 90° => ritorna `retto`. Angolo piatto: 180° => ritorna `piatto`.*/
 
-document.getElementById("consegna-7").innerText = "Crea una funzione per trovare il tipo di una ngolo i cui gradi sono passati come parametri. Angolo acuto: meno di 90° => ritorna `acuto`. Angolo ottuso: tra i 90° e i 180° gradi => ritorna `ottuso`. Angolo retto: 90° => ritorna `retto`. Angolo piatto: 180° => ritorna `piatto`."
+document.getElementById("consegna-7").innerHTML = "Crea una funzione per trovare il tipo di una ngolo i cui gradi sono passati come parametri. <br>Angolo acuto: meno di 90° => ritorna `acuto`. <br>Angolo ottuso: tra i 90° e i 180° gradi => ritorna `ottuso`. <br>Angolo retto: 90° => ritorna `retto`. <br>Angolo piatto: 180° => ritorna `piatto`."
 
 /* ESERCIZIO 8:
 Crea una funzione che crei un acronimo a partire da una frase. `Fabbrica Italiana Automobili Torino` deve ritornare `FIAT`.*/
 
-document.getElementById("consegna-8").innerText = "Crea una funzione che crei un acronimo a partire da una frase. `Fabbrica Italiana Automobili Torino` deve ritornare `FIAT`."
+document.getElementById("consegna-8").innerHTML = "Crea una funzione che crei un acronimo a partire da una frase. <br>`Fabbrica Italiana Automobili Torino` deve ritornare `FIAT`."
