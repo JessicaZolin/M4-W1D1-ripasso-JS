@@ -318,7 +318,7 @@ const checkArray = (a) => {
             return `<span class = "text-success fw-bold">True</span>: l'array contiene il numero 3.`;
         }
     }
-    return `<span class = text-danger fw-bold">False</span>: l'array non contiene ne il numero 1 ne il numero 3.`
+    return `<span class = "text-danger fw-bold">False</span>: l'array non contiene ne il numero 1 ne il numero 3.`
 }
 
 
